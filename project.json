@@ -1,14 +1,12 @@
 {
-  "name": "CRM_003_CreditConcentration",
-  "description": "Credit Risk Management Credit Concentration Process",
+  "name": "CRM_005_ContinuousMonitoring",
+  "description": "Credit Risk Management Continuous Monitoring",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.16.1]",
-    "UiPath.PDF.Activities": "[3.16.0]",
     "UiPath.System.Activities": "[22.10.4]",
     "UiPath.Testing.Activities": "[22.10.1]",
-    "UiPath.UIAutomation.Activities": "[22.10.4]",
-    "UiPathSharedLibrary_Windows": "[1.0.13]"
+    "UiPath.UIAutomation.Activities": "[22.10.4]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -45,42 +43,42 @@
     "fileInfoCollection": [
       {
         "editingStatus": "InProgress",
-        "testCaseId": "f354c77c-29ae-4cc1-8bdd-794465e547d1",
+        "testCaseId": "f60406f9-1d79-4891-bc0e-16fe732326f6",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\GetTransactionDataTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "a585dec2-13eb-4156-b03c-ee94033b5386",
+        "testCaseId": "5fdf479e-d724-4710-8bf7-f6ed7417ea13",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "d1590195-6bbe-4003-8e1c-1f04b7e399a2",
+        "testCaseId": "3b44324a-0777-41bb-a036-321c2d73c066",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\InitAllSettingsTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "6e5a1c08-3d4f-485a-a6c3-b3a84550aabd",
+        "testCaseId": "51cdd62c-d6af-4ec1-8aa9-dd9790729724",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\MainTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "7f895222-1b41-4fa5-be00-22cc76bace14",
+        "testCaseId": "6212adbb-c30b-44ff-aee8-76fa41e0e7ad",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\ProcessTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "2c109cc5-6908-4124-b7ba-4b724f1972cd",
+        "testCaseId": "930d0af1-e8f6-49cf-9ad9-49b2683ec0e4",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
@@ -92,7 +90,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "6df225de-a86b-4883-916d-99a86a8ef832",
+      "uniqueId": "e5505aad-002f-407f-8a3f-840858fd87b2",
       "input": [],
       "output": []
     }
