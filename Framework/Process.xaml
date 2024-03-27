@@ -641,7 +641,7 @@
                 </Assign.Value>
               </Assign>
               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[LogMessage]" />
-              <ui:BuildDataTable DataTable="[DT_Log]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="338,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Timestamp&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Filename&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Sheetname&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Remarks&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+              <ui:BuildDataTable DataTable="[DT_Log]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="338,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Timestamp&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Filename&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Sheetname&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Remarks&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
               <ui:FileExistsX DisplayName="File Exists" Exists="[FileExists]" sap:VirtualizedContainerService.HintSize="338,133" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="[OutputLog]" />
               <If Condition="[FileExists]" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="If_3">
                 <sap:WorkflowViewStateService.ViewState>
@@ -714,23 +714,45 @@
           </Assign>
           <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="497,92" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[LogMessage]" />
           <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[SheetName]" sap:VirtualizedContainerService.HintSize="497,611" sap2010:WorkflowViewState.IdRef="Switch`1_1">
-            <Sequence x:Key="1-Borrower Results" sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <Sequence x:Key="1-Borrower Results" sap:VirtualizedContainerService.HintSize="400,316" sap2010:WorkflowViewState.IdRef="Sequence_15">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Excel\BorrowerResults.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Excel\BorrowerResults.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
-                  <OutArgument x:TypeArguments="x:Boolean" x:Key="out_Exception">[blnException]</OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="out_ExceptionLog">[strExceptionLog]</OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="out_ExceptionMessage">[strExceptionMessage]</OutArgument>
-                  <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DT_CDRawData">[in_DT_CDRawData]</InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="in_ColumnRemove">[in_Config("BR_ColumnRemove").ToString]</InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="in_OutputPath">[Path.Combine(OutputPath,OutputFilename)]</InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="in_SheetName">[in_Config("BR_SheetName").ToString]</InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="in_CellStart">[in_Config("BR_CellStart").ToString]</InArgument>
+                  <OutArgument x:TypeArguments="x:Boolean" x:Key="out_Exception">
+                    <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="blnException" />
+                  </OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="out_ExceptionLog">
+                    <VisualBasicReference x:TypeArguments="x:String" ExpressionText="strExceptionLog" />
+                  </OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="out_ExceptionMessage">
+                    <VisualBasicReference x:TypeArguments="x:String" ExpressionText="strExceptionMessage" />
+                  </OutArgument>
+                  <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DT_CDRawData">
+                    <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="in_DT_CDRawData" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_ColumnRemove">
+                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;BR_ColumnRemove&quot;).ToString" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_OutputPath">
+                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Path.Combine(OutputPath,OutputFilename)" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_SheetName">
+                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;BR_SheetName&quot;).ToString" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_CellStart">
+                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;BR_CellStart&quot;).ToString" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:Int32" x:Key="in_RowStart">
+                    <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="Cint(in_Config(&quot;BR_RowStart&quot;))" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:Int32" x:Key="in_RowLoop">
+                    <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="Cint(in_Config(&quot;BR_RowLoop&quot;))" />
+                  </InArgument>
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
               <If Condition="[blnException]" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="If_4">
